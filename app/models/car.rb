@@ -9,4 +9,10 @@ class Car < ApplicationRecord
   }
 
   validates :year, inclusion: 1769..Time.zone.now.year
+
+  belongs_to :user, optional: true
+
+  scope :unclaimed, -> { where(user_id: nil) }
+
+  scope :for_user, ->(user) { where(user_id: user) }
 end
