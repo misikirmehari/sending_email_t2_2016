@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'bootstrap-generators'
 gem 'record_tag_helper', '~> 1.0'
+gem 'omniauth-github'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
@@ -44,6 +45,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'launchy'
   gem 'faker'
+  gem 'dotenv-rails'
 end
 
 group :development do
