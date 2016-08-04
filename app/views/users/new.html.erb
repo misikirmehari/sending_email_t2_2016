@@ -4,6 +4,7 @@
       <div class='col-xs-6'>
         <%= image_tag('octocat.png', class: 'img-responsive center-block') %>
         <%= link_to button_tag('Sign up via Github', class: 'btn-auth btn-github center-block'), '/auth/github' %>
+        <%= link_to button_tag('Sign up via Twitter', class: 'btn-auth btn-twitter center-block'), '/auth/twitter' %>
       </div>
       <div class='col-xs-6'>
         <h1 class='center-block'>Signup</h1>
@@ -12,6 +13,7 @@
     <% else %>
       <div class='col-sx-10 col-xs-offset-2 center-block'>
         <h1>Verify Details</h1>
+        <%= render 'users/form' %>
       </div>
     <% end %>
 
