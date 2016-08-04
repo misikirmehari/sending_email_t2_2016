@@ -11,16 +11,21 @@ feature 'User Authentication' do
     # Click the link with the text Signup
     click_link 'Signup'
 
+
+
     # Fill in my first name
-    fill_in 'First name', with: 'bob'
+    fill_in 'First Name', with: 'bob'
 
     # Fill in my last name
-    fill_in 'Last name', with: 'smith'
+    fill_in 'Last Name', with: 'smith'
 
     # ...
     fill_in 'Email', with: 'bob@smith.com'
     fill_in 'Password', with: 'sup3rs3krit'
-    fill_in 'Password confirmation', with: 'sup3rs3krit'
+
+    #save_and_open_page
+
+    fill_in 'Password Confirmation', with: 'sup3rs3krit'
 
     # Click a button that says Signup
     click_button 'Signup'
@@ -44,6 +49,7 @@ feature 'User Authentication' do
 
     fill_in 'Email', with: user.email
     fill_in 'Password', with: user.password
+
 
     click_button 'Login'
 
