@@ -117,6 +117,8 @@ GEM
     jwt (1.5.4)
     launchy (2.4.3)
       addressable (~> 2.3)
+    letter_opener (1.4.1)
+      launchy (~> 2.2)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -206,6 +208,8 @@ GEM
       rspec-core (~> 3.5.0)
       rspec-expectations (~> 3.5.0)
       rspec-mocks (~> 3.5.0)
+    rspec-collection_matchers (1.1.2)
+      rspec-expectations (>= 2.99.0.beta1)
     rspec-core (3.5.1)
       rspec-support (~> 3.5.0)
     rspec-expectations (3.5.0)
@@ -285,12 +289,14 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   launchy
+  letter_opener
   listen (~> 3.0.5)
   omniauth-github
   omniauth-twitter
   puma (~> 3.0)
   rails (~> 5.0.0)
   record_tag_helper (~> 1.0)
+  rspec-collection_matchers
   rspec-rails
   sass-rails (~> 5.0)
   shoulda-matchers
@@ -303,4 +309,4 @@ DEPENDENCIES
   web-console
 
 BUNDLED WITH
-   1.12.4
+   1.12.5
